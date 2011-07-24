@@ -1,0 +1,30 @@
+--- Avalon-4.1.4/build.xml	2007-04-16 15:18:55.000000000 -0400
++++ Avalon-4.1.4/build.xml	2007-04-16 15:19:26.000000000 -0400
+@@ -156,8 +156,7 @@ Legal:
+             destdir="${target.classes}"
+             debug="${debug}"
+             optimize="${optimize}"
+-            deprecation="${deprecation}"
+-            target="1.2">
++            deprecation="${deprecation}">
+             <classpath refid="project.class.path" />
+             <src path="${test.dir}"/>
+             <exclude name="org/apache/avalon/framework/logger/LogKit*.java"
+@@ -332,7 +331,7 @@ Legal:
+             sourcepath="${java.dir}"
+             destdir="${target.javadocs}">
+             <classpath refid="project.class.path" />
+-            <doclet name="com.sun.tools.doclets.standard.Standard">
++            <!-- doclet name="com.sun.tools.doclets.standard.Standard">
+                 <param name="-author"/>
+                 <param name="-version"/>
+                 <param name="-doctitle" value="${Name}"/>
+@@ -340,7 +339,7 @@ Legal:
+                 <param name="-bottom"
+                     value="&quot;Copyright &#169; 2001 Apache Jakarta Project. All Rights Reserved.&quot;"/>
+                 <param name="-link" value="http://java.sun.com/j2se/1.4/docs/api/"/>
+-            </doclet>
++            </doclet -->
+         </javadoc>
+ 
+     </target>
